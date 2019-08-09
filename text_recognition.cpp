@@ -102,6 +102,7 @@ int main(int argc, char **argv)
         prev_size = curr_size;
     }
 
+    //remove lines with zero bounding boxes
     int curr_max = 0;
     long unsigned int curr_idx;
     vector<RotatedRect> curr_box;
@@ -128,7 +129,7 @@ int main(int argc, char **argv)
     }
 
     vector<json::value> imageText;
-
+    // Render detections and extract text.
     for (int i = 0; i < box_indices.size(); i++)
     {
         vector<int> indices = box_indices[i].ind;
@@ -136,7 +137,7 @@ int main(int argc, char **argv)
         if (indices.size() != 0)
         {
             sort(indices.begin(), indices.end());
-            // Render detections.
+
             Point2f ratio((float)frame.cols / inpWidth, (float)frame.rows / inpHeight);
             Point2f vertices[4];
             if (detect == "word")
