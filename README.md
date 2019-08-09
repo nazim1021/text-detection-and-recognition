@@ -6,8 +6,8 @@ This project focusses on using OpenCV to detect text in images using the EAST te
 ## REQUIREMENTS
 1. Ubuntu 16.04/18.04
 2. C++ (g++ compiler) 
-3. Tesseract (https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation and https://www.learnopencv.com/deep-learning-based-text-recognition-ocr-using-tesseract-and-opencv/ )
-4. OpenCV 3.4 + (here https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/)
+3. [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation)
+4. [OpenCV](https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/)
 
 
 ## USAGE
@@ -20,7 +20,9 @@ Run the file text_recognition.cpp as below
 ## RESULTS
 Text detection output:
 
-Text Recognition output:
+<img src="output.jpg" width="300">
+
+Text recognition output:
 
 `{
     "text": "HEALTHY FOOD MENU!",
@@ -45,7 +47,7 @@ Text Recognition output:
 }`
 
 ## REFERENCES
-- EAST: An Efficient and Accurate Scene Text Detector https://arxiv.org/abs/1704.03155
+- [EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155)
 - https://www.pyimagesearch.com/2018/08/20/opencv-text-detection-east-text-detector/
 - https://github.com/opencv/opencv/blob/master/samples/dnn/text_detection.cpp
 - https://github.com/opencv/opencv_contrib/blob/master/modules/text/samples/end_to_end_recognition.cpp
